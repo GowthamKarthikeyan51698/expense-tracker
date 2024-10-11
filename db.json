@@ -1,0 +1,9 @@
+{
+  "login": [
+    {
+      "user_id": "test@test.com",
+      "user_password": "Admin@123",
+      "id": 1
+    }
+  ]
+}

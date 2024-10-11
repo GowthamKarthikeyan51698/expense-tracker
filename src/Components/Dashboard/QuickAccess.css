@@ -1,0 +1,54 @@
+.quick-access{
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.quick-access .options{
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.quick-access .options .option-box{
+    padding: 10px;
+    background-color: #444444;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+}
+
+.quick-access .options .option-box span{
+    font-weight: 600;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+.quick-access-logos{
+    width: 50px;
+    border-radius: 100%;
+}
+
+.quick-access-logos.new-expense{
+    background-color: #5ead8b;
+}
+
+.quick-access-logos.create-report{
+    background-color: #AD5E99;
+}
+
+.quick-access-logos.add-receipt{
+    background-color: #796842;
+}
+
+.quick-access-logos.create-trips{
+    background-color: #794279;
+}
+
+.quick-access-logos img{
+    width: inherit;
+    padding: 12px;
+    margin: auto;
+    display: block;
+}
