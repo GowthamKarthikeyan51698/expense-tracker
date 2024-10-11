@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
 
 body{
   font-family: 'Work Sans';
@@ -48,7 +48,7 @@ body{
 }
 
 .app-title{
-  font-family: "Satisfy", cursive;
+  font-family: "Signika Negative", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -158,7 +158,7 @@ body{
 }
 .sidebar .app-title-footer{
   color: #fff;
-  font-family: "Satisfy", cursive;
+  font-family: "Signika Negative", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -203,6 +203,7 @@ body{
 .input-select-content{
   padding: 7px 10px;
   border-radius: 7px;
+  width:100%;
   background-color: #555555;
   color: darkgrey
 }
@@ -213,6 +214,7 @@ body{
   background-color: #555555;
   color: #fff;
   height: 100%;
+  outline: none;
 }
 
 .gap-1rem{
@@ -221,4 +223,7 @@ body{
 
 .gap-point5rem{
   gap: .5rem
+}
+.header-underline{
+  border-bottom: .5px solid #707070;
 }

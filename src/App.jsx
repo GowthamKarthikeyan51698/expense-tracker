@@ -5,6 +5,8 @@ import Sidebar from './Sidebar'
 import Home from './Components/Dashboard/Home'
 import { useNavigate, useLocation } from 'react-router-dom'
 import CreateExpenses from './Components/Expense/CreateExpenses'
+import CreateCompany from './Components/Company/CreateCompany'
+import CreateTrip from './Components/Trips/CreateTrip'
 
 export default function App() {
   const navigate = useNavigate();
@@ -23,6 +25,8 @@ export default function App() {
             <Routes>
               <Route path='/' element={<Home />}></Route>
               <Route path='/create-expense' element={<CreateExpenses />}></Route>
+              <Route path='/create-company' element={<CreateCompany />}></Route>
+              <Route path='/create-trip' element={<CreateTrip />}></Route>
             </Routes>
           </div>
         </> }

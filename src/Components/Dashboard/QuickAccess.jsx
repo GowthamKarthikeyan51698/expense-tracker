@@ -4,8 +4,14 @@ import { useNavigate } from 'react-router-dom'
 
 export default function QuickAccess() {
   const navigate = useNavigate();  
-  const RedirectPage = () => {
-    navigate('/create-expense')
+  const RedirectPage = (type) => {
+    if(type == 'new-expense'){
+        navigate('/create-expense')
+    } else if(type == 'add-company'){
+        navigate('/create-company')
+    } else if(type == 'create-trips'){
+        navigate('/create-trip')
+    }
   }
 
   return (
@@ -29,6 +35,12 @@ export default function QuickAccess() {
                     <img src="/receipt-icon.svg" alt="" />
                 </div>
                 <span>+ Add Receipt</span>
+            </button>
+            <button className='option-box' onClick={() => RedirectPage('add-company')}>
+                <div className='quick-access-logos me-1 add-receipt'>
+                    <img src="/company-icon.svg" alt="" />
+                </div>
+                <span>+ Add Company</span>
             </button>
             <button className='option-box' onClick={() => RedirectPage('create-trips')}>
                 <div className='quick-access-logos me-1 create-trips'>

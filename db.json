@@ -5,5 +5,17 @@
       "user_password": "Admin@123",
       "id": 1
     }
-  ]
+  ],
+  "expense": [],
+  "report": [],
+  "budget": [],
+  "companies": [],
+  "employees": [],
+  "expense_settings": {
+    "approver_role": "",
+    "categories": [],
+    "users_approval_settings":  [
+
+    ]
+  }
 }
