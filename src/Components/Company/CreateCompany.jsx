@@ -50,7 +50,7 @@ export default function CreateCompany() {
     }, [])
     return (
         <div className=''>
-            <h2 className='fw-600 text-white'>Create New Company</h2>
+            <h2 className='fw-600 text-white'>New Company</h2>
             <div className="form-group row mt-2">
                 <label htmlFor="Subject" className="col-sm-2 col-form-label font-weight-bold">Company Name<sup>*</sup> </label>
                 <div className="col-sm-10">
@@ -112,7 +112,7 @@ export default function CreateCompany() {
                                 </div>
                             </div>
                             <div className="form-group row mt-2">
-                                <label htmlFor="email" className="col-sm-2 col-form-label font-weight-bold">Email<sup>*</sup> </label>
+                                <label htmlFor="email" className="col-sm-2 col-form-label font-weight-bold">Description</label>
                                 <div className="col-sm-10">
                                     <textarea type="Description" required className="textarea-field-content w-100" id="description" placeholder="Enter Description" value={comp.description} onChange={(e) => changeInput(e)} />
                                 </div>
@@ -123,6 +123,10 @@ export default function CreateCompany() {
             </div>
             <div className='d-flex align-items-center justify-content-end mt-3'>
                 <button className='btn btn-primary' onClick={addMoreDepartments}>+ Add Department</button>
+            </div>
+            <div className='d-flex align-items-center justify-content-center gap-point5rem mt-3'>
+                <button className='btn btn-danger'>Cancel</button>
+                <button className='btn btn-success'>Submit</button>
             </div>
         </div>
     )

@@ -11,6 +11,8 @@ export default function QuickAccess() {
         navigate('/create-company')
     } else if(type == 'create-trips'){
         navigate('/create-trip')
+    } else if(type == 'create-report'){
+        navigate('/create-report')
     }
   }
 
@@ -30,12 +32,12 @@ export default function QuickAccess() {
                 </div>
                 <span>+ Create Report</span>
             </button>
-            <button className='option-box' onClick={() => RedirectPage('add-receipts')}>
+            {/* <button className='option-box' onClick={() => RedirectPage('add-receipts')}>
                 <div className='quick-access-logos me-1 add-receipt'>
                     <img src="/receipt-icon.svg" alt="" />
                 </div>
                 <span>+ Add Receipt</span>
-            </button>
+            </button> */}
             <button className='option-box' onClick={() => RedirectPage('add-company')}>
                 <div className='quick-access-logos me-1 add-receipt'>
                     <img src="/company-icon.svg" alt="" />

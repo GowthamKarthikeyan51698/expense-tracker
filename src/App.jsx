@@ -7,6 +7,11 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import CreateExpenses from './Components/Expense/CreateExpenses'
 import CreateCompany from './Components/Company/CreateCompany'
 import CreateTrip from './Components/Trips/CreateTrip'
+import CreateReport from './Components/Reports/CreateReport'
+import ListBudget from './Components/Budget/ListBudget'
+import CreateBudget from './Components/Budget/CreateBudget'
+import Settings from './Components/Settings/Settings'
+import ListExpenses from './Components/Expense/ListExpenses'
 
 export default function App() {
   const navigate = useNavigate();
@@ -27,6 +32,11 @@ export default function App() {
               <Route path='/create-expense' element={<CreateExpenses />}></Route>
               <Route path='/create-company' element={<CreateCompany />}></Route>
               <Route path='/create-trip' element={<CreateTrip />}></Route>
+              <Route path='/create-report' element={<CreateReport />}></Route>
+              <Route path='/create-budget' element={<CreateBudget />}></Route>
+              <Route path='/list-budget' element={<ListBudget />}></Route>
+              <Route path='/settings' element={<Settings />}></Route>
+              <Route path='/list-expenses' element={<ListExpenses />}></Route>
             </Routes>
           </div>
         </> }

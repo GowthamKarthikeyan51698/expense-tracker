@@ -1,0 +1,23 @@
+.recent-expenses-section{
+    display: grid;
+    grid-template-columns: 40% 58.6%;
+    gap:1rem
+}
+
+.pending-tasks,
+.recent-expenses{
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.overflow-auto{
+    overflow-x: auto;
+}
+
+@media screen and (max-width:992px) {
+    .recent-expenses-section{
+        grid-template-columns: 100%;
+        gap:0
+    }
+}

@@ -7,6 +7,12 @@ export default function Sidebar() {
   const NavigateToPage = (type) => {
     if(type == 'Home'){
       navigate('/')
+    } else if(type == 'settings'){
+      navigate('/settings')
+    } else if(type == 'budget'){
+      navigate('/list-budget')
+    } else if(type == 'expense'){
+      navigate('/list-expenses')
     }
   }
 
@@ -30,7 +36,7 @@ export default function Sidebar() {
             <i className="fa fa-home fs-22 home-hover-active"></i>
             <span className="ms-2 menu-item">Home</span>
           </li>
-          <li className='text-white'>
+          <li className='text-white' onClick={() => NavigateToPage('budget')}>
             <img src="/budget-icon.svg" width="20" className='inactive-icon' alt="" />
             <img src="/budget-icon-active.svg" width="20" className='active-icon' alt="" />
             <span className="ms-2 menu-item">Budget</span> 
@@ -41,7 +47,7 @@ export default function Sidebar() {
 
             <span className="ms-2 menu-item">Company</span>
           </li>
-          <li className='text-white'>
+          <li className='text-white' onClick={() => NavigateToPage("expense")}>
             <img src="/expense-icon.svg" width="20" className='inactive-icon' alt="" />
             <img src="/expense-icon-active.svg" width="20" className='active-icon' alt="" />
 
@@ -59,7 +65,7 @@ export default function Sidebar() {
 
             <span className="ms-2 menu-item">Approvals</span>
           </li>
-          <li className='text-white'>
+          <li className='text-white' onClick={() => NavigateToPage('settings')}>
             <img src="/settings-icon.svg" width="20" className='inactive-icon' alt="" />
             <img src="/settings-icon-active.svg" width="20" className='active-icon' alt="" />
 

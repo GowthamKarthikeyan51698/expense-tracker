@@ -22,7 +22,7 @@ export default function CreateExpenses() {
 
   return (
     <>
-        <h2 className='fw-600 text-white'>Create New Expense</h2>
+        <h2 className='fw-600 text-white'>New Expense</h2>
         <div className=''>
             <div className="form-group row mt-2">
                 <label htmlFor="Subject" className="col-sm-1 col-form-label font-weight-bold">Subject<sup>*</sup> </label>
@@ -78,6 +78,10 @@ export default function CreateExpenses() {
                 <div className="col-sm-10">
                     <input type="text" required className="input-field-content w-100" id="employee" placeholder="Enter Employee" value={expense.employee} onChange={(e) => changeInput(e)}/>
                 </div>
+            </div>
+            <div className='d-flex align-items-center justify-content-center gap-point5rem mt-3'>
+                <button className='btn btn-danger'>Cancel</button>
+                <button className='btn btn-success'>Submit</button>
             </div>
         </div>
     </>

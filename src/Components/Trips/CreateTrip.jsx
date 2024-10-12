@@ -122,6 +122,10 @@ export default function CreateTrip() {
                     <input type="text" className="input-field-content w-100" required id="name" placeholder="Enter Name" value={trip.name} onChange={(e) => changeInput(e)} />
                 </div>
             </div>
+            <div className='d-flex align-items-center justify-content-center gap-point5rem mt-3'>
+                <button className='btn btn-danger'>Cancel</button>
+                <button className='btn btn-success'>Submit</button>
+            </div>
         </div>
     </>
   )
