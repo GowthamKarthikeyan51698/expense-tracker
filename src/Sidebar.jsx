@@ -13,6 +13,10 @@ export default function Sidebar() {
       navigate('/list-budget')
     } else if(type == 'expense'){
       navigate('/list-expenses')
+    } else if(type == 'reports'){
+      navigate('/list-reports')
+    } else if(type == 'company'){
+      navigate('/list-company')
     }
   }
 
@@ -41,7 +45,7 @@ export default function Sidebar() {
             <img src="/budget-icon-active.svg" width="20" className='active-icon' alt="" />
             <span className="ms-2 menu-item">Budget</span> 
           </li>
-          <li className='text-white'>
+          <li className='text-white' onClick={() => NavigateToPage('company')}>
             <img src="/company-icon.svg" width="20" className='inactive-icon' alt="" />
             <img src="/company-icon-active.svg" width="20" className='active-icon' alt="" />
 
@@ -53,7 +57,7 @@ export default function Sidebar() {
 
             <span className="ms-2 menu-item">Expenses</span>
           </li>
-          <li className='text-white'>
+          <li className='text-white' onClick={() => NavigateToPage('reports')}>
             <img src="/report-icon.svg" width="20" className='inactive-icon' alt="" />
             <img src="/report-icon-active.svg" width="20" className='active-icon' alt="" />
 

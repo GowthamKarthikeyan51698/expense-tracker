@@ -12,6 +12,9 @@ import ListBudget from './Components/Budget/ListBudget'
 import CreateBudget from './Components/Budget/CreateBudget'
 import Settings from './Components/Settings/Settings'
 import ListExpenses from './Components/Expense/ListExpenses'
+import ListCompany from './Components/Company/ListCompany'
+import ListReports from './Components/Reports/ListReports'
+import CreateEmployee from './Components/Employee/CreateEmployee'
 
 export default function App() {
   const navigate = useNavigate();
@@ -35,8 +38,11 @@ export default function App() {
               <Route path='/create-report' element={<CreateReport />}></Route>
               <Route path='/create-budget' element={<CreateBudget />}></Route>
               <Route path='/list-budget' element={<ListBudget />}></Route>
-              <Route path='/settings' element={<Settings />}></Route>
               <Route path='/list-expenses' element={<ListExpenses />}></Route>
+              <Route path='/list-company' element={<ListCompany />}></Route>
+              <Route path='/list-reports' element={<ListReports />}></Route>
+              <Route path='/settings' element={<Settings />}></Route>
+              <Route path='/create-employee' element={<CreateEmployee />}></Route>
             </Routes>
           </div>
         </> }

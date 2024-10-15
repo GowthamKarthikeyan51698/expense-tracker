@@ -29,7 +29,7 @@ export default function ListExpenses() {
                         <td className='text-white'>
                             $250.00
                         </td>
-                        <td className='text-white'>
+                        <td className='text-danger'>
                             Not Submitted
                         </td>
                     </tr>
@@ -48,7 +48,26 @@ export default function ListExpenses() {
                         <td className='text-white'>
                             $250.00
                         </td>
+                        <td className='text-success'>
+                            Submitted
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div className="form-check">
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </div>
+                        </td>
                         <td className='text-white'>
+                            Food Catering
+                        </td>
+                        <td className='text-white'>
+                            McFood
+                        </td>
+                        <td className='text-white'>
+                            $250.00
+                        </td>
+                        <td className='text-danger'>
                             Not Submitted
                         </td>
                     </tr>
@@ -67,7 +86,7 @@ export default function ListExpenses() {
                         <td className='text-white'>
                             $250.00
                         </td>
-                        <td className='text-white'>
+                        <td className='text-danger'>
                             Not Submitted
                         </td>
                     </tr>
@@ -86,26 +105,7 @@ export default function ListExpenses() {
                         <td className='text-white'>
                             $250.00
                         </td>
-                        <td className='text-white'>
-                            Not Submitted
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </div>
-                        </td>
-                        <td className='text-white'>
-                            Food Catering
-                        </td>
-                        <td className='text-white'>
-                            McFood
-                        </td>
-                        <td className='text-white'>
-                            $250.00
-                        </td>
-                        <td className='text-white'>
+                        <td className='text-danger'>
                             Not Submitted
                         </td>
                     </tr>
