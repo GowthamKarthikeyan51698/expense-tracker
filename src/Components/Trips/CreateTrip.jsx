@@ -16,15 +16,17 @@ export default function CreateTrip() {
             date: ''
         },
         budget_limit: '',
-        Accomodation: {
+        accomodation: {
             check_in:'',
             check_out: '',
             hotel: ''
-        }
+        },
+        other_expenses: [],
     }
   })
   const changeInput = (e) => {
     console.log(e);
+
   }
   return (
     <>
@@ -103,7 +105,7 @@ export default function CreateTrip() {
                     <input type="text" className="input-field-content w-100" required id="name" placeholder="Enter Name" value={trip.name} onChange={(e) => changeInput(e)} />
                 </div>
             </div>
-            <h6 className='my-4 text-white'>ACCOMODATION</h6>
+            <h6 className='my-4 text-white'>a</h6>
             <div>
                 <div className="form-group row mt-2">
                     <label htmlFor="Name" className="col-sm-2 col-form-label font-weight-bold">Check-in<sup>*</sup></label>

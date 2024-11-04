@@ -15,6 +15,7 @@ import ListExpenses from './Components/Expense/ListExpenses'
 import ListCompany from './Components/Company/ListCompany'
 import ListReports from './Components/Reports/ListReports'
 import CreateEmployee from './Components/Employee/CreateEmployee'
+import ListEmployee from './Components/Employee/ListEmployee'
 
 export default function App() {
   const navigate = useNavigate();
@@ -43,6 +44,7 @@ export default function App() {
               <Route path='/list-reports' element={<ListReports />}></Route>
               <Route path='/settings' element={<Settings />}></Route>
               <Route path='/create-employee' element={<CreateEmployee />}></Route>
+              <Route path='/list-employee' element={<ListEmployee />}></Route>
             </Routes>
           </div>
         </> }

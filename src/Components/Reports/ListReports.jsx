@@ -16,7 +16,9 @@ export default function ListReports() {
                       <th className='text-white'>Report ID</th>
                       <th className='text-white'>Status</th>
                   </tr>
-                  <tr>
+              </thead>
+              <tbody>
+              <tr>
                       <td>
                           <div className="form-check">
                               <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
@@ -141,7 +143,7 @@ export default function ListReports() {
                           Not Submitted
                       </td>
                   </tr>
-              </thead>
+              </tbody>
           </table>
       </div>
     </>

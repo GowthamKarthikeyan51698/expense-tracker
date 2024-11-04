@@ -4,6 +4,7 @@ export default function CreateEmployee() {
   const [employee, setEmployee] = useState({
     first_name: '',
     middle_name: '',
+    allocated_amount: '',
     last_name: '',
     date_of_birth: '',
     gender: '',
@@ -14,8 +15,18 @@ export default function CreateEmployee() {
       login_password: ''
     },
     user_role: '',
-
   })
+
+  const changeInput = (e) => {
+    let {id, value} = e.target;
+    console.log(id, value);
+    if(id == 'login_email' || id == 'login_password'){
+        setEmployee({...employee, credentials: {...employee.credentials, [id]: value}})
+    } else {
+        setEmployee({...employee, [id]: value})
+    }
+  }
+
   return (
     <>
       <h2 className='fw-600 text-white'>New Employee</h2>
@@ -70,12 +81,16 @@ export default function CreateEmployee() {
             <div className="col-sm-4">
                 <input type="email" className="input-field-content w-100" required id="personal_email" placeholder="Enter Personal Email ID" value={employee.personal_email} onChange={(e) => changeInput(e)} />
             </div>
+            <label htmlFor="allocated_amount" className="col-sm-2 col-form-label font-weight-bold">Amount Allocation<sup>*</sup> </label>
+            <div className="col-sm-4">
+                <input type="text" className="input-field-content w-100" required id="allocated_amount" placeholder="Enter Amount" value={employee.allocated_amount} onChange={(e) => changeInput(e)} />
+            </div>
         </div>
         <h6 className='text-white mt-5'>Set Credentials</h6>
         <div className="form-group row mt-2">
             <label htmlFor="first_name" className="col-sm-2 col-form-label font-weight-bold">Login ID<sup>*</sup> </label>
             <div className="col-sm-4">
-                <input type="email" className="input-field-content w-100" required id="personal_email" placeholder="Enter Login Email ID" value={employee.credentials.login_email} onChange={(e) => changeInput(e)} />
+                <input type="email" className="input-field-content w-100" required id="login_email" placeholder="Enter Login Email ID" value={employee.credentials.login_email} onChange={(e) => changeInput(e)} />
             </div>
         </div>
         <div className="form-group row mt-2">

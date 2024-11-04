@@ -14,6 +14,8 @@ export default function ListExpenses() {
                         <th className='text-white'>Amount</th>
                         <th className='text-white'>Status</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td>
                             <div className="form-check">
@@ -109,7 +111,7 @@ export default function ListExpenses() {
                             Not Submitted
                         </td>
                     </tr>
-                </thead>
+                </tbody>
             </table>
         </div>
     </>

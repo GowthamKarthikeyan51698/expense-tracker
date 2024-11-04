@@ -25,7 +25,7 @@ export default function CreateReport() {
             <div className="form-group row mt-2">
                 <label htmlFor="creation_date" className="col-sm-2 col-form-label font-weight-bold">Creation Date<sup>*</sup></label>
                 <div className="col-sm-4">
-                    <input type="text" className="input-field-content w-100" required id="creation_date" placeholder="Enter Creation Date" value={report.creation_date} onChange={(e) => changeInput(e)} />
+                    <input type="date" className="input-field-content w-100" required id="creation_date" placeholder="Enter Date" value={report.creation_date} onChange={(e) => changeInput(e)} />
                 </div>
                 <label htmlFor="company_name" className="col-sm-2 col-form-label font-weight-bold">Company Name<sup>*</sup></label>
                 <div className="col-sm-4">
@@ -51,102 +51,104 @@ export default function CreateReport() {
                             <th className='text-white'>Amount</th>
                             <th className='text-white'>Status</th>
                         </tr>
-                        <tr>
-                            <td>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                </div>
-                            </td>
-                            <td className='text-white'>
-                                Food Catering
-                            </td>
-                            <td className='text-white'>
-                                McFood
-                            </td>
-                            <td className='text-white'>
-                                $250.00
-                            </td>
-                            <td className='text-white'>
-                                Not Submitted
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                </div>
-                            </td>
-                            <td className='text-white'>
-                                Food Catering
-                            </td>
-                            <td className='text-white'>
-                                McFood
-                            </td>
-                            <td className='text-white'>
-                                $250.00
-                            </td>
-                            <td className='text-white'>
-                                Not Submitted
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                </div>
-                            </td>
-                            <td className='text-white'>
-                                Food Catering
-                            </td>
-                            <td className='text-white'>
-                                McFood
-                            </td>
-                            <td className='text-white'>
-                                $250.00
-                            </td>
-                            <td className='text-white'>
-                                Not Submitted
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                </div>
-                            </td>
-                            <td className='text-white'>
-                                Food Catering
-                            </td>
-                            <td className='text-white'>
-                                McFood
-                            </td>
-                            <td className='text-white'>
-                                $250.00
-                            </td>
-                            <td className='text-white'>
-                                Not Submitted
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                </div>
-                            </td>
-                            <td className='text-white'>
-                                Food Catering
-                            </td>
-                            <td className='text-white'>
-                                McFood
-                            </td>
-                            <td className='text-white'>
-                                $250.00
-                            </td>
-                            <td className='text-white'>
-                                Not Submitted
-                            </td>
-                        </tr>
                     </thead>
+                    <tbody>
+                    <tr>
+                            <td>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </td>
+                            <td className='text-white'>
+                                Food Catering
+                            </td>
+                            <td className='text-white'>
+                                McFood
+                            </td>
+                            <td className='text-white'>
+                                $250.00
+                            </td>
+                            <td className='text-white'>
+                                Not Submitted
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </td>
+                            <td className='text-white'>
+                                Food Catering
+                            </td>
+                            <td className='text-white'>
+                                McFood
+                            </td>
+                            <td className='text-white'>
+                                $250.00
+                            </td>
+                            <td className='text-white'>
+                                Not Submitted
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </td>
+                            <td className='text-white'>
+                                Food Catering
+                            </td>
+                            <td className='text-white'>
+                                McFood
+                            </td>
+                            <td className='text-white'>
+                                $250.00
+                            </td>
+                            <td className='text-white'>
+                                Not Submitted
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </td>
+                            <td className='text-white'>
+                                Food Catering
+                            </td>
+                            <td className='text-white'>
+                                McFood
+                            </td>
+                            <td className='text-white'>
+                                $250.00
+                            </td>
+                            <td className='text-white'>
+                                Not Submitted
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                </div>
+                            </td>
+                            <td className='text-white'>
+                                Food Catering
+                            </td>
+                            <td className='text-white'>
+                                McFood
+                            </td>
+                            <td className='text-white'>
+                                $250.00
+                            </td>
+                            <td className='text-white'>
+                                Not Submitted
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

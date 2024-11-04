@@ -12,6 +12,7 @@
 .quick-access .options .option-box{
     padding: 10px;
     background-color: #444444;
+    min-width: 210px;
     color: #fff;
     display: inline-flex;
     align-items: center;

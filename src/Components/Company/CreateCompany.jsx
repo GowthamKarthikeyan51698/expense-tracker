@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import company_types from '../../JSONS/companyTypes.json'
 import './CreateCompany.css'
+import Multiselect from 'multiselect-react-dropdown'
 
 export default function CreateCompany() {
     const [company, setCompany] = useState({
@@ -70,14 +71,24 @@ export default function CreateCompany() {
             <div className="form-group row mt-2">
                 <label htmlFor="Subject" className="col-sm-2 col-form-label font-weight-bold">Industry Type<sup>*</sup> </label>
                 <div className="col-sm-10">
-                    <select className="input-select-content" id="currency" required onChange={(e) => changeInput(e)}>
+                    {/* <select className="input-select-content" id="currency" required onChange={(e) => changeInput(e)}>
                         <option value="">Select</option>
                         {
                             company_types.map(x => (
                                 <option value={x}>{x}</option>
                             ))
                         }
-                    </select>
+                    </select> */}
+                    <Multiselect
+                        displayValue=""
+                        onKeyPressFn={function noRefCheck(){}}
+                        onRemove={function noRefCheck(){}}
+                        onSearch={function noRefCheck(){}}
+                        onSelect={function noRefCheck(){}}
+                        options={company_types}
+                        isObject={false}
+                        singleSelect
+                        />
                 </div>
             </div>
             <h4 className='fw-600 text-white my-3'>Add New Department</h4>

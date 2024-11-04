@@ -29,6 +29,12 @@ export default function Settings() {
     setExpenseConfig({...expenseConfig, set_max: e.target.checked})
   }
 
+  const addNewCategory = () => {
+    let temp_categories = [...categories]
+    temp_categories.push("")
+    setCategory(temp_categories)
+  }
+
   useEffect(() => {
     setCategory(
       [
@@ -48,12 +54,15 @@ export default function Settings() {
             <div className='col-lg-4 col-md-6 col-sm-12 mt-2' key={x_index}>
               <div className='d-flex align-items-center gap-point3rem'>
                 <input type="text" required className="input-field-content w-100" placeholder="Enter Category" value={x} onChange={(e) => changeInput(e, x_index)}/>
-                <i className='fa fa-minus-circle text-danger pointer' onClick={() => removeCategory(x_index)}></i>
+                {categories.length > 1 && <i className='fa fa-minus-circle text-danger pointer' onClick={() => removeCategory(x_index)}></i> }
                 <i className='fa fa-check-circle text-success pointer' onClick={() => confirmCategory(x_index)}></i>
               </div>
             </div>
           ))
         }
+        <div className='d-flex align-items-center justify-content-end text-success mt-2'>
+          <span onClick={addNewCategory} className='pointer'>+ Add Category</span>
+        </div>
       </div>
       <h5 className='fw-600 text-white mt-4'>Expense Configurations</h5>
       <div className='text-white d-flex mt-4'>

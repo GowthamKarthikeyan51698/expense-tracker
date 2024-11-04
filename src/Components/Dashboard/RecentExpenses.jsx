@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './RecentExpenses.css'
 
 export default function RecentExpenses() {
+  useEffect(() => {
+    let circle_progress = document.getElementById("circle-progress")
+    circle_progress.style.setProperty("--dash", '550px')
+  }, [])
   return (
     <div>
       <div className='recent-expenses-section'>
@@ -82,6 +86,25 @@ export default function RecentExpenses() {
                     </tr>
                 </tbody>
             </table>
+          </div>
+        </div>
+        <div className='recent-expenses mt-3-sm-custom'>
+          <div className='d-flex align-items-center justify-center-sm justify-content-between flex-wrap'>
+            <div className='position-relative'>
+              <svg width="200" height="200" viewBox="0 0 250 250" id="circle-progress" className="circular-progress">
+                <circle className="bg"></circle>
+                <circle className="fg"></circle>
+              </svg>
+              <div className='text-white progress-percent'>90%</div>
+            </div>
+            <div className='px-2 pt-2'>
+              <h6 className='text-white text-center'>Total Budget</h6>
+              <div className='text-white text-center'>1,00,000</div>
+              <h6 className='text-white text-center mt-2'>Amount Spent</h6>
+              <div className='text-white text-center'>10,000</div>
+              <h6 className='text-white text-center mt-2'>Remaining Amount</h6>
+              <div className='text-white text-center'>90,000</div>
+            </div>
           </div>
         </div>
       </div>

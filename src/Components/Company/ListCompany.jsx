@@ -15,9 +15,11 @@ export default function ListCompany() {
                       <th className='text-white'>Currency</th>
                       <th className='text-white'>Industry Type</th>
                       <th className='text-white'>Department</th>
-                      <th className='text-white'></th>
+                      <th className='text-white'>Employee Actions</th>
                   </tr>
-                  <tr>
+              </thead>
+              <tbody>
+                    <tr>
                       <td className='text-white'>
                           Company 1
                       </td>
@@ -34,9 +36,11 @@ export default function ListCompany() {
                           QA, R&D, Operations
                       </td>
                       <td className='text-white'>
-                        <button className='btn btn-primary' onClick={() => navigate('/create-employee')}>
+                        {/* <button className='btn btn-primary' onClick={() => navigate('/create-employee')}>
                           + Add New Employee
-                        </button>
+                        </button> */}
+                        <i className='fa fa-eye text-white pointer' onClick={() => navigate('/list-employee')}></i>
+                        <i className='fa fa-plus-circle text-white ms-2 pointer' onClick={() => navigate('/create-employee')}></i>
                       </td>
                   </tr>
                   <tr>
@@ -53,15 +57,17 @@ export default function ListCompany() {
                           IT & Infrastructure
                       </td>
                       <td className='text-white'>
-                          QA, R&D <span class="text-primary pointer">+2 more</span>
+                          QA, R&D <span className="text-primary pointer">+2 more</span>
                       </td>
                       <td className='text-white'>
-                        <button className='btn btn-primary' onClick={() => navigate('/create-employee')}>
+                        {/* <button className='btn btn-primary' onClick={() => navigate('/create-employee')}>
                           + Add New Employee
-                        </button>
+                        </button> */}
+                        <i className='fa fa-eye text-white pointer' onClick={() => navigate('/list-employee')}></i>
+                        <i className='fa fa-plus-circle text-white ms-2 pointer' onClick={() => navigate('/create-employee')}></i>
                       </td>
                   </tr>
-              </thead>
+              </tbody>
           </table>
       </div>
     </>
