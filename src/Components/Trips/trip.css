@@ -1,0 +1,36 @@
+.trip-details-section{
+    background-color: rgb(27, 27, 27);
+    height: 100vh;
+}
+
+table.trip-planner-table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    color: #fff
+}
+
+table.trip-planner-table thead tr th {
+    background-color: rgb(40, 40, 42);
+}
+
+table.trip-planner-table tbody tr td{
+    border-top: .5px solid grey;
+    border-bottom: .5px solid grey;
+}
+
+table.trip-planner-table tbody tr td:first-child{
+    border-left: .5px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+table.trip-planner-table tbody tr td:last-child{
+    border-right: .5px solid grey;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sub-heading{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6)
+}

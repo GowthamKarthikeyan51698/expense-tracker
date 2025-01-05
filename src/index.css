@@ -254,3 +254,12 @@ table thead tr th,
 table tbody tr td{
   padding: 5px 10px;
 } 
+
+.pending-btn{
+  background-color: rgb(140, 29, 94);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: #fff;
+  max-height: 40px;
+}

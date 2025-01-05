@@ -6,13 +6,13 @@ export default function QuickAccess() {
   const navigate = useNavigate();  
   const RedirectPage = (type) => {
     if(type == 'new-expense'){
-        navigate('/create-expense')
+        navigate('/expense/create-expense')
     } else if(type == 'add-company'){
-        navigate('/create-company')
+        navigate('/company/create-company')
     } else if(type == 'create-trips'){
-        navigate('/create-trip')
+        navigate('/trip/create-trip')
     } else if(type == 'create-report'){
-        navigate('/create-report')
+        navigate('/report/create-report')
     }
   }
 
@@ -24,13 +24,13 @@ export default function QuickAccess() {
                 <div className='quick-access-logos me-1 new-expense'>
                     <img src="/expense-icon.svg" alt="" />
                 </div>
-                <span>+ New Expense</span>
+                <span>New Expense</span>
             </button>
             <button className='option-box' onClick={() => RedirectPage('create-report')}>
                 <div className='quick-access-logos me-1 create-report'>
                     <img src="/report-icon.svg" alt="" />
                 </div>
-                <span>+ Create Report</span>
+                <span>Create Report</span>
             </button>
             {/* <button className='option-box' onClick={() => RedirectPage('add-receipts')}>
                 <div className='quick-access-logos me-1 add-receipt'>
@@ -42,13 +42,13 @@ export default function QuickAccess() {
                 <div className='quick-access-logos me-1 add-receipt'>
                     <img src="/company-icon.svg" alt="" />
                 </div>
-                <span>+ Add Company</span>
+                <span>Add Company</span>
             </button>
             <button className='option-box' onClick={() => RedirectPage('create-trips')}>
                 <div className='quick-access-logos me-1 create-trips'>
                     <img src="/trips-icon.svg" alt="" />
                 </div>
-                <span>+ Create Trips</span>
+                <span>Create Trips</span>
             </button>
         </div>
     </div>

@@ -10,13 +10,15 @@ export default function Sidebar() {
     } else if(type == 'settings'){
       navigate('/settings')
     } else if(type == 'budget'){
-      navigate('/list-budget')
+      navigate('/budget/list-budget')
     } else if(type == 'expense'){
-      navigate('/list-expenses')
+      navigate('/expense/list-expenses')
     } else if(type == 'reports'){
-      navigate('/list-reports')
+      navigate('/report/list-reports')
     } else if(type == 'company'){
-      navigate('/list-company')
+      navigate('/company/list-company')
+    } else if(type == 'trips'){
+      navigate('/trip/list-trips')
     }
   }
 
@@ -63,6 +65,12 @@ export default function Sidebar() {
 
             <span className="ms-2 menu-item">Reports</span>
           </li>
+          <li className='text-white' onClick={() => NavigateToPage('trips')}>
+            <img src="/trips-icon.svg" width="20" className='inactive-icon' alt="" />
+            <img src="/trips-icon-active.svg" width="20" className='active-icon' alt="" />
+
+            <span className="ms-2 menu-item">Trips</span>
+          </li>
           <li className='text-white'>
             <img src="/approval-icon.svg" width="20" className='inactive-icon' alt="" />
             <img src="/approval-icon-active.svg" width="20" className='active-icon' alt="" />
@@ -78,7 +86,7 @@ export default function Sidebar() {
         </ul>
         <h6 className='app-title-footer'>
             <img src="/money.png" className='me-2' width="25" alt="" />
-            GK Expense Tracker
+            GK Expense
         </h6>
       </div>
     </>

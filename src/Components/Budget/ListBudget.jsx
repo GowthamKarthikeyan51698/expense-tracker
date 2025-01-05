@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 export default function ListBudget() {
   const navigate = useNavigate();
   const NewBudget = () => {
-    navigate('/create-budget')
+    navigate('/budget/create-budget')
   }
   return (
     <>
